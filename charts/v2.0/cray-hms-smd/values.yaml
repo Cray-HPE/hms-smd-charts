@@ -8,7 +8,7 @@
 #   pullPolicy: "" (default = "IfNotPresent")
 
 global:
-  appVersion: 1.34.0
+  appVersion: 1.36.0
 
 image:
   repository: artifactory.algol60.net/csm-docker/stable/cray-smd
