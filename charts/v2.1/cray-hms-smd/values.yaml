@@ -10,7 +10,7 @@
 global:
   appVersion: 1.52.0
   #testVersion: 1.52.0
-  testVersion: 1.52.0-20220613222017.56aad0c
+  testVersion: 1.52.0-20220613233534.0f2664f
 
 image:
   repository: artifactory.algol60.net/csm-docker/stable/cray-smd
