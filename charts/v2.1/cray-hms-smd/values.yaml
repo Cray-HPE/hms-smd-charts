@@ -10,7 +10,7 @@
 global:
   appVersion: 1.52.0
   #testVersion: 1.52.0
-  testVersion: 1.52.0-20220613233534.0f2664f
+  testVersion: 1.52.0-20220615231943.a9a6a48
 
 image:
   repository: artifactory.algol60.net/csm-docker/stable/cray-smd
@@ -18,8 +18,7 @@ image:
 
 tests:
   image:
-    #repository: artifactory.algol60.net/csm-docker/stable/cray-smd-test
-    repository: artifactory.algol60.net/csm-docker/unstable/cray-smd-test
+    repository: artifactory.algol60.net/csm-docker/stable/cray-smd-test
     pullPolicy: Always
 
 kubectl:
