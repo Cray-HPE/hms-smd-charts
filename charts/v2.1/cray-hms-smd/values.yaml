@@ -8,8 +8,8 @@
 #   pullPolicy: "" (default = "IfNotPresent")
 
 global:
-  appVersion: 1.55.0
-  testVersion: 1.55.0
+  appVersion: 1.56.0
+  testVersion: 1.56.0
 
 image:
   repository: artifactory.algol60.net/csm-docker/stable/cray-smd
@@ -122,13 +122,13 @@ cray-service:
       livenessProbe:
         httpGet:
           port: 27779
-          path: /hsm/v1/service/liveness
+          path: /hsm/v2/service/liveness
         initialDelaySeconds: 5
         periodSeconds: 10
       readinessProbe:
         httpGet:
           port: 27779
-          path: /hsm/v1/service/ready
+          path: /hsm/v2/service/ready
         initialDelaySeconds: 15
         periodSeconds: 30
         timeoutSeconds: 10
