@@ -122,13 +122,13 @@ cray-service:
       livenessProbe:
         httpGet:
           port: 27779
-          path: /hsm/v2/service/liveness
+          path: /hsm/v1/service/liveness
         initialDelaySeconds: 5
         periodSeconds: 10
       readinessProbe:
         httpGet:
           port: 27779
-          path: /hsm/v2/service/ready
+          path: /hsm/v1/service/ready
         initialDelaySeconds: 15
         periodSeconds: 30
         timeoutSeconds: 10
