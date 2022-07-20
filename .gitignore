@@ -21,3 +21,11 @@
 .vscode
 
 *.tgz
+
+# Prevent certificates from getting checked in
+*.ca
+*.cer
+*.crt
+*.csr
+*.key
+*.pem
