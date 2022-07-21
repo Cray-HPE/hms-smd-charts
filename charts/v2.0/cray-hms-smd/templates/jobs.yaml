@@ -49,7 +49,7 @@ spec:
       serviceAccountName: "jobs-watcher"
       containers:
         - name: cray-smd-init
-          image: {{ .Values.image.repository }}:{{ .Values.global.appVersion }}
+          image: {{ .Values.image.repository }}:{{ default .Chart.AppVersion .Values.image.tag }}
           env:
             # NOTE: overridden in container if POSTGRES_HOST is set
             - name: SMD_DBHOST
