@@ -1,13 +1,13 @@
 apiVersion: v2
 name: "cray-hms-smd"
-version: 2.1.9
+version: 2.1.10
 description: "Kubernetes resources for cray-hms-smd"
 home: "https://github.com/Cray-HPE/hms-smd-charts"
 sources:
   - "https://github.com/Cray-HPE/hms-smd"
 dependencies:
   - name: cray-service
-    version: "~7.0.0"
+    version: "~8.2.3"
     repository: https://artifactory.algol60.net/artifactory/csm-helm-charts
 maintainers:
   - name: Hardware Management
