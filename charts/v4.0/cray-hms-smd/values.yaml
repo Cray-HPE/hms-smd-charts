@@ -8,8 +8,8 @@
 #   pullPolicy: "" (default = "IfNotPresent")
 
 global:
-  appVersion: 1.58.0
-  testVersion: 1.58.0
+  appVersion: 1.61.0
+  testVersion: 1.61.0
 
 image:
   repository: artifactory.algol60.net/csm-docker/stable/cray-smd
@@ -17,7 +17,7 @@ image:
 
 tests:
   image:
-    repository: artifactory.algol60.net/csm-docker/stable/cray-smd-test
+    repository: artifactory.algol60.net/csm-docker/stable/cray-smd-hmth-test
     pullPolicy: IfNotPresent
 
 kubectl:
