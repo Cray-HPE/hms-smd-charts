@@ -116,6 +116,10 @@ cray-service:
           value: "http://cray-hbtd/hmi/v1"
         - name: GOMAXPROCS
           value: "8"
+        - name: POSTGRES_HOST
+          value: cray-sls-postgres
+        - name: POSTGRES_PORT
+          value: "5432"
       ports:
         - name: http
           containerPort: 27779
@@ -157,6 +161,7 @@ cray-service:
 
 cray-postgresql:
   nameOverride: "cray-smd"
+  fullnameOverride: "cray-smd"
   sqlCluster:
     enabled: true
     enableLogicalBackup: true
