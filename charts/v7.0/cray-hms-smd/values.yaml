@@ -8,8 +8,8 @@
 #   pullPolicy: "" (default = "IfNotPresent")
 
 global:
-  appVersion: 2.11.4
-  testVersion: 2.11.4
+  appVersion: 2.11.5
+  testVersion: 2.11.5
 
 image:
   repository: artifactory.algol60.net/csm-docker/stable/cray-smd
@@ -114,6 +114,10 @@ cray-service:
               key: CA_URI
         - name: SMD_HBTD_HOST
           value: "http://cray-hbtd/hmi/v1"
+        - name: SMD_PARADISE_MAC
+          value: "true"
+        - name: SMD_PARADISE_MAC_INC
+          value: "2"
         - name: GOMAXPROCS
           value: "8"
         - name: POSTGRES_HOST
