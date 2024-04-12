@@ -31,6 +31,8 @@ schemaAccessMode: ReadWriteMany
 
 hms_ca_uri: ""
 
+smdInitJobTTL: 2147483647
+
 cray-service:
   type: "Deployment"
   nameOverride: "cray-smd"
