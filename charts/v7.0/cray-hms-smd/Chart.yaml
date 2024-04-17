@@ -1,6 +1,6 @@
 apiVersion: v2
 name: "cray-hms-smd"
-version: 7.0.9
+version: 7.0.10
 description: "Kubernetes resources for cray-hms-smd"
 home: "https://github.com/Cray-HPE/hms-smd-charts"
 sources:
