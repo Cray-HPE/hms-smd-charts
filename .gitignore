@@ -32,4 +32,6 @@
 
 # Vendor directories that should not be checked in
 vendor/hms-build-changed-charts-action/
-        
+
+# vim
+*.swp
