@@ -4,4 +4,3 @@ jobs:
   k8s_api_checker:
     uses: Cray-HPE/hms-build-chart-workflows/.github/workflows/k8s_api_checker.yaml@k8s-api-checker-casmhms-6190
     secrets: inherit
-    check-all-charts: true
