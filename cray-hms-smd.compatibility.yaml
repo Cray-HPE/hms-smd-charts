@@ -8,7 +8,7 @@ chartVersionToCSMVersion:
   ">=5.0.0": ">=1.4.0" # CSM 1.4.0 is locked on chart version 5.0.0 and using app version 2.2.*
                        # If chart changes are needed a 5.0.4 chart with app 2.2.* is likely possible
   ">=6.0.0": ">=1.5.0" # CSM 1.5.0 is using chart 7.0.* and app version 2.11.*
-  ">=7.1.0": ">=1.6.0"
+  ">=7.1.0": ">=1.6.0" # CSM 1.6.0 or later
   
 # The application version must be compliant to semantic versioning.
 # If the application makes a backwards incompatible change, then its major version needs to be increment.
@@ -88,6 +88,7 @@ chartVersionToApplicationVersion:
   "7.1.14": "2.26.0"
   "7.1.15": "2.27.0"
   "7.1.16": "2.28.0"
+  "7.1.17": "2.28.0"
 
 # Test results for combinations of Chart, Application, and CSM versions.
 chartValidationLog: []
