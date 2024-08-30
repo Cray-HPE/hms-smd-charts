@@ -14,7 +14,7 @@ chartVersionToCSMVersion:
   ">=4.0.0": ">=1.3.0"
   ">=5.0.0": ">=1.4.0" # CSM 1.4.0 is locked on chart version 5.0.0 and using app version 2.2.*
                        # If chart changes are needed a 5.0.4 chart with app 2.2.* is likely possible
-  ">=6.0.0": ">=1.5.0" # Next app change should bump app version 2.11.x
+  ">=6.0.0": ">=1.5.0" # CSM 1.5 is locked to app version 2.11.*
   ">=7.1.0": ">=1.6.0"
   
 # The application version must be compliant to semantic versioning.
