@@ -7,7 +7,7 @@ sources:
   - "https://github.com/Cray-HPE/hms-smd"
 dependencies:
   - name: cray-service
-    version: "~11.0.0"
+    version: "~11.0"
     repository: https://artifactory.algol60.net/artifactory/csm-helm-charts
   - name: cray-postgresql
     version: "~1.0"
