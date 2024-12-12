@@ -1,6 +1,6 @@
 apiVersion: v2
 name: "cray-hms-smd"
-version: 7.0.21
+version: 7.0.22
 description: "Kubernetes resources for cray-hms-smd"
 home: "https://github.com/Cray-HPE/hms-smd-charts"
 sources:
@@ -15,6 +15,6 @@ dependencies:
 maintainers:
   - name: Hardware Management
     url: https://github.com/orgs/Cray-HPE/teams/hardware-management
-appVersion: "2.11.17"
+appVersion: "2.11.18"
 annotations:
   artifacthub.io/license: "MIT"
