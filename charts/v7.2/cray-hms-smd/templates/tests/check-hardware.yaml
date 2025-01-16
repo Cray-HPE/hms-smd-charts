@@ -1,0 +1,36 @@
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: "{{ .Release.Name }}-check-hardware"
+  annotations:
+    "helm.sh/hook": test
+    "helm.sh/hook-delete-policy": before-hook-creation,hook-succeeded
+    "helm.sh/hook-weight": "2" #run this after smoke and functional
+
+  labels:
+    app.kubernetes.io/name: "{{ .Release.Name }}-check-hardware"
+
+spec:
+  backoffLimit: 0
+  template:
+    metadata:
+      name: "{{ .Release.Name }}-check-hardware"
+      annotations:
+        "proxy.istio.io/config": '{ "holdApplicationUntilProxyStarts": true }'
+      labels:
+        app.kubernetes.io/managed-by:  "{{ include "cray-service.name" . }}"
+        app.kubernetes.io/instance:  "{{ .Release.Name }}-check-hardware"
+        helm.sh/chart: "{{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}"
+    spec:
+      restartPolicy: Never
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 65534
+        runAsGroup: 65534
+      containers:
+        - name: "check-hardware"
+          image: "{{ .Values.tests.image.repository }}:{{ .Values.global.testVersion }}"
+          imagePullPolicy: "{{ .Values.tests.image.pullPolicy }}"
+          command: ["/bin/sh", "-c"]
+          args: ["entrypoint.sh tavern -c /src/libs/tavern_global_config.yaml -p /src/app/api/1-hardware-checks"]
