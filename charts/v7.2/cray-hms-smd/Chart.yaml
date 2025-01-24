@@ -1,0 +1,23 @@
+apiVersion: v2
+name: "cray-hms-smd"
+version: 7.2.0
+description: "Kubernetes resources for cray-hms-smd"
+home: "https://github.com/Cray-HPE/hms-smd-charts"
+sources:
+  - "https://github.com/Cray-HPE/hms-smd"
+dependencies:
+  - name: cray-service
+    version: "~11.0"
+    repository: https://artifactory.algol60.net/artifactory/csm-helm-charts
+  - name: cray-postgresql
+    version: "~1.0"
+    repository: https://artifactory.algol60.net/artifactory/csm-helm-charts
+maintainers:
+  - name: Hardware Management
+    url: https://github.com/orgs/Cray-HPE/teams/hardware-management
+appVersion: "2.33.0"  # update pprof image version below as well
+annotations:
+  artifacthub.io/images: |-
+    - name: cray-smd-pprof
+      image: artifactory.algol60.net/csm-docker/stable/cray-smd-pprof:2.33.0
+  artifacthub.io/license: "MIT"
