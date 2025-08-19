@@ -1,6 +1,6 @@
 apiVersion: v2
 name: "cray-hms-smd"
-version: 7.1.24
+version: 7.1.25
 description: "Kubernetes resources for cray-hms-smd"
 home: "https://github.com/Cray-HPE/hms-smd-charts"
 sources:
@@ -19,5 +19,5 @@ appVersion: "2.32.5"  # update pprof image version below as well
 annotations:
   artifacthub.io/images: |-
     - name: cray-smd-pprof
-      image: artifactory.algol60.net/csm-docker/stable/cray-smd-pprof:2.32.5
+      image: artifactory.algol60.net/csm-docker/stable/cray-smd-pprof:2.32.6
   artifacthub.io/license: "MIT"
