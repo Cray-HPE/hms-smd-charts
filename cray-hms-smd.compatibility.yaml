@@ -107,6 +107,7 @@ chartVersionToApplicationVersion:
   "7.1.23": "2.32.2"
   "7.1.24": "2.32.5"	# 3.32.5 needed due to 2.32.3 and 2.32.4 tagging issues
   "7.1.25": "2.32.6"
+  "7.1.26": "2.32.7"
   "7.2.0": "2.33.0"
   "7.2.1": "2.34.0"
   "7.2.2": "2.35.0"
@@ -117,6 +118,7 @@ chartVersionToApplicationVersion:
   "7.2.7": "2.39.0"
   "7.2.8": "2.40.0"
   "7.2.9": "2.41.0"
+  "7.2.10": "2.42.0"
 
 # Test results for combinations of Chart, Application, and CSM versions.
 chartValidationLog: []
