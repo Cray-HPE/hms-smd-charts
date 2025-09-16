@@ -9,7 +9,8 @@ data:
              "System",
              "Application",
              "Storage",
-             "Management"
+             "Management",
+             "SSFabricManagerRole"
           ],
           "SubRole":[
              "Worker",
@@ -19,7 +20,8 @@ data:
              "Gateway",
              "LNETRouter",
              "Visualization",
-             "UserDefined"
+             "UserDefined",
+             "SSFabricManagerSubrole"
           ]
        }
     }
