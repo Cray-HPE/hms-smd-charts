@@ -19,7 +19,8 @@ data:
              "Gateway",
              "LNETRouter",
              "Visualization",
-             "UserDefined"
+             "UserDefined",
+             "FabricManager"
           ]
        }
     }
