@@ -8,16 +8,18 @@
 #   pullPolicy: "" (default = "IfNotPresent")
 
 global:
-  appVersion: 2.46.0-20260225164250.04856a9
-  testVersion: 2.46.0-20260225164250.04856a9
+  appVersion: 2.46.0
+  testVersion: 2.46.0
 
 image:
   repository: artifactory.algol60.net/csm-docker/unstable/cray-smd
+  version: 2.46.0-20260225164245.04856a9
   pullPolicy: IfNotPresent
 
 tests:
   image:
     repository: artifactory.algol60.net/csm-docker/unstable/cray-smd-hmth-test
+    version: 2.46.0-20260225164250.04856a9
     pullPolicy: IfNotPresent
 
 kubectl:
@@ -58,7 +60,7 @@ cray-service:
     cray-smd:
       name: "cray-smd"
       image:
-        repository: artifactory.algol60.net/csm-docker/stable/cray-smd
+        repository: artifactory.algol60.net/csm-docker/unstable/cray-smd
       resources:
         limits:
           cpu: "16"
